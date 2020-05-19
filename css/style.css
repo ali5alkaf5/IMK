@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial !important;
+}
+body{
+}
+
+@media only screen and (max-width: 1024px) {
+    .responsive{
+        width: 100% !important;
+    }
+    body{
+        background-color: deepskyblue !important;
+    }
+}
+
+
+
+.image-container{
+    object-fit: cover;
+}
+/* NAVBAR */
+.navbar-responsive{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    position: fixed;
+    height: 80px;
+    width: 960px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(2px);
+}
+.logo{
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+.nav-button-container{
+    position: relative;
+    height: 100px;
+    width: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav-button{
+    position: relative;
+    width: auto;
+    height: 60px;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.nav-button-text{
+    position: relative;
+    font-size: 20px;
+}
+
+
+/*OVERLAY*/
+.food-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    display: none;
+}
+.overlay-container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.overlay-pic{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    padding: 5px;
+}
+.overlay-text{
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay-exit-button:hover{
+    transform: scale(1.1);
+}
+
+/*PAGE*/
+.container{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+.responsive{
+    position: relative;
+    width: 960px;
+    height: auto;
+    background-color: deepskyblue;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*first container content */
+.main-first-container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-first-container-left{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    order: 1;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.main-first-container-left-search-bar{
+    position: relative;
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.main-first-container-left-search-bar-search-button{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    margin-left: auto;
+    border: none;
+}
+.main-first-container-right{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin-right: 50px;
+    border-radius: 10px;
+    order: 2;
+}
+.main-second-container{
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main-second-container-food-container{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.main-second-container-food-container:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow: 4px 4px 28px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 28px -8px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 28px -8px rgba(0,0,0,0.75)
+}
+.main-second-container-image{
+    position: relative;
+    width: 100%;
+    height: 225px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-second-container-text{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: darkblue;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ARTIKEL */
+.artikel-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.artikel-picture{
+    position: relative;
+    width: 400px;
+    height: 100%;
+}
+.artikel-writing{
+    position: relative;
+    width: 560px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* ABOUT US */
+.about-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #3338ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-writings{
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
