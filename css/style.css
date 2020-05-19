@@ -14,6 +14,10 @@ body{
     body{
         background-color: deepskyblue !important;
     }
+    .main-second-container-food-container{
+        width: 40vw !important;
+        height : 48vw !important;
+    }
 }
 
 
