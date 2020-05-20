@@ -1,299 +1,267 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial !important;
-}
-body{
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/javascripts.js"></script>
+</head>
+<body id="body">
+<div class="navbar-responsive">
+    <nav class="navbar">
+        <div class="logo" style="background-color: transparent">
+            <img class="image-container" src="img/logo.png" style="width: 80px; height: 80px">
+        </div>
+        <div class="nav-button-container">
+            <a class="nav-button">
+                <p class="nav-button-text"><b>Home</b></p>
+            </a>
+            <a href="about-us.html" class="nav-button">
+                <p class="nav-button-text">Hubungi Kami</p>
+            </a>
+            <a href="article.html" class="nav-button">
+                <p class="nav-button-text">Artikel</p>
+            </a>
+        </div>
+    </nav>
+</div>
+<div id="nasigoreng" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/nasi-goreng.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>NASI GORENG</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px">
+                    <img src="img/nasi-goreng-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ayamgoreng" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/ayam-goreng.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>AYAM GORENG</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/ayam-goreng-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="satepadang" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/sate-padang.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>SATE PADANG</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/sate-padang-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="igabakar" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/iga-bakar.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>IGA BAKAR</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/iga-bakar-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sirloin" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/steak.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>SIRLOIN STEAK</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/steak-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="baksosapi" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/bakso-sapi.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>BAKSO SAPI</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/bakso-sapi-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pizza" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/pizza.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>PIZZA</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/pizza-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nasikuning" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/nasi-kuning.jpg\" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>NASI KUNING</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/nasi-kuning-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="lasagna" class="food-overlay" style="z-index: 3">
+    <div class="responsive">
+        <div class="overlay-container">
+            <a onclick="off()" class="overlay-exit-button" style="width: 50px; height: 50px; position: absolute; right: 5px; top: 5px;"><img src="img/exit.png" style="object-fit: cover; width: 50px; height: 50px"></a>
+            <div class="overlay-pic">
+                <img src="img/lasagna.jpg" style="object-fit: cover; width: 290px; height: 290px">
+            </div>
+            <div class="overlay-text">
+                <h1>LASAGNA</h1>
+                <div style="width: 500px; height: 394px; margin-top: 20px; background-color: black">
+                    <img src="img/lasagna-details.jpg" style="object-fit: cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="container">
+    <section class="responsive" style="z-index: 2">
+        <div class="main-first-container">
+            <img class="image-container" src="img/first-background.png" style="position: absolute; height: 400px; width: 100%; z-index: 2">
+            <div class="main-first-container-left" style="z-index: 3">
+                <p style="font-size: 44px; font-weight: bold; margin-bottom: 24px">GIZI & NUTRISI</p>
+                <p style="font-size: 18px">Cari Tahu Lebih Lanjut Mengenai </p>
+                <p style="font-size: 18px">Apa Yang Anda Makan</p>
+            </div>
+            <div class="main-first-container-right" style="z-index: 3">
+                <img class="image-container" src="img/eating-gif.gif" style="width: 300px; height: 300px; border-radius: 10px; border: 5px solid black;">
+            </div>
+        </div>
+        <div class="main-second-container">
+            <div style="width: 100%; height: 80px; position: relative; display: flex; justify-content: center; align-items: center">
+                <div class="main-first-container-left-search-bar">
+                    <input placeholder="Cari Makanan Anda Disini" style="padding-left: 6px;width: 460px; height: 40px; position: relative; font-size: 20px;">
+                    <button class="main-first-container-left-search-bar-search-button">
+                        <img class="image-container" src="img/search-button.jpg" style="width: 40px; height: 40px">
+                    </button>
+                </div>
+            </div>
 
-@media only screen and (max-width: 1024px) {
-    .responsive{
-        width: 100% !important;
-    }
-    body{
-        background-color: deepskyblue !important;
-    }
-    .main-second-container-food-container{
-        width: 40vw !important;
-        height : 48vw !important;
-    }
-}
+            <div onclick="nasiGoreng()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/nasi-goreng.jpg">
+                </div>
+                <div class="main-second-container-text">
+                    <p style="font-size: 20px; font-weight: bold; margin-top: 10px">Nasi Goreng</p>
+                </div>
+            </div>
 
+            <div onclick="ayamGoreng()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/ayam-goreng.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Ayam Goreng</p></div>
+            </div>
 
+            <div onclick="satePadang()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/sate-padang.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Sate Padang</p></div>
+            </div>
 
-.image-container{
-    object-fit: cover;
-}
-/* NAVBAR */
-.navbar-responsive{
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navbar{
-    position: fixed;
-    height: 80px;
-    width: 960px;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(2px);
-}
-.logo{
-    position: relative;
-    height: 80px;
-    width: 80px;
-}
-.nav-button-container{
-    position: relative;
-    height: 100px;
-    width: auto;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 10px;
-}
-.nav-button{
-    position: relative;
-    width: auto;
-    height: 60px;
-    margin: auto;
-    background-color: transparent;
-    border: none;
-    margin-left: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-.nav-button-text{
-    position: relative;
-    font-size: 20px;
-}
+            <div onclick="igaBakar()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/iga-bakar.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Iga Bakar</p></div>
+            </div>
 
+            <div onclick="steak()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/steak.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Sirloin Steak</p></div>
+            </div>
 
-/*OVERLAY*/
-.food-overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(2px);
-    position: fixed;
-    display: none;
-}
-.overlay-container{
-    width: 100%;
-    height: auto;
-    background-color: white;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.overlay-pic{
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    position: relative;
-    padding: 5px;
-}
-.overlay-text{
-    width: 600px;
-    height: 300px;
-    background-color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.overlay-exit-button:hover{
-    transform: scale(1.1);
-}
+            <div onclick="baksoSapi()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/bakso-sapi.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Bakso Sapi</p></div>
+            </div>
 
-/*PAGE*/
-.container{
-    position: absolute;
-    height: auto;
-    width: 100%;
-    background-color: transparent;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 0;
-}
-.responsive{
-    position: relative;
-    width: 960px;
-    height: auto;
-    background-color: deepskyblue;
-    margin: auto;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-}
+            <div onclick="pizza()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/pizza.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Pizza</p></div>
+            </div>
 
-/*first container content */
-.main-first-container{
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.main-first-container-left{
-    position: relative;
-    width: 400px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    order: 1;
-    border-radius: 0 30px 30px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-.main-first-container-left-search-bar{
-    position: relative;
-    width: 500px;
-    height: 40px;
-    background-color: white;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-}
-.main-first-container-left-search-bar-search-button{
-    position: relative;
-    height: 40px;
-    width: 40px;
-    right: 0;
-    margin-left: auto;
-    border: none;
-}
-.main-first-container-right{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    margin-right: 50px;
-    border-radius: 10px;
-    order: 2;
-}
-.main-second-container{
-    padding-bottom: 50px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.main-second-container-food-container{
-    position: relative;
-    width: 250px;
-    height: 300px;
-    background-color: white;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.2s;
-}
+            <div onclick="nasiKuning()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/nasi-kuning.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Nasi Kuning</p></div>
+            </div>
 
-.main-second-container-food-container:hover{
-    transform: scale(1.05);
-    -webkit-box-shadow: 4px 4px 28px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 4px 28px -8px rgba(0,0,0,0.75);
-    box-shadow: 4px 4px 28px -8px rgba(0,0,0,0.75)
-}
-.main-second-container-image{
-    position: relative;
-    width: 100%;
-    height: 225px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main-second-container-text{
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer{
-    width: 100%;
-    height: 150px;
-    position: relative;
-    background-color: darkblue;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+            <div onclick="lasagna()" class="main-second-container-food-container">
+                <div class="main-second-container-image">
+                    <img class="image-container image-container-food" style="width: 225px; height: 225px; margin-top: 25px" src="img/lasagna.jpg">
+                </div>
+                <div class="main-second-container-text"><p style="font-size: 20px; font-weight: bold; margin-top: 10px">Lasagna</p></div>
+            </div>
 
-
-/* ARTIKEL */
-.artikel-container{
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.artikel-picture{
-    position: relative;
-    width: 400px;
-    height: 100%;
-}
-.artikel-writing{
-    position: relative;
-    width: 560px;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-/* ABOUT US */
-.about-container{
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: #3338ff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.about-writings{
-    width: auto;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
+        </div>
+    </section>
+    <footer class="footer">
+        <p style="color: white"><b>©2020 FoodStats</b></p>
+    </footer>
+</section>
+</body>
+</html>
